@@ -1,9 +1,6 @@
 package com.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MyController {
@@ -281,6 +278,18 @@ public class MyController {
         return "Area of Square is "+(side * side);
 
     }
+
+
+    @RequestMapping("/getcollageinfo")
+    public String getcollageinfo(@RequestParam String cname,
+                                 @RequestParam String location){
+
+        return "Name of collage is "+ cname +" location is "+location;
+
+    }
+
+
+    
 
 
 }
