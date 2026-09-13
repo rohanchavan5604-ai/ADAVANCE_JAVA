@@ -9,7 +9,7 @@ public class Restaurant {
     String restaurantName = "Rangda Bet";
     String location = "Savlaj";
 
-    //field injection
+
     @Autowired
     Chef c;
 
